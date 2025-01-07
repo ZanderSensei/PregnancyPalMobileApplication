@@ -1,0 +1,1 @@
+The Pregnancy Pal app is designed to enhance the pregnancy experience for both the expectant mother and her partner by offering comprehensive tools for tracking habits, moods, and appointments. The use of Firebase, Flutter, and Google Cloud Functions ensures that the app is scalable, reliable, and user-friendly.
