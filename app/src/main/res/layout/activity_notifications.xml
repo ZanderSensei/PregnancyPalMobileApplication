@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationsActivity">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Doctor's Appointments"
+        android:textSize="24sp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:background="#DDD"
+        android:padding="16dp" />
+
+    <!-- TextView to display the number of appointments -->
+    <TextView
+        android:id="@+id/tvAppointmentCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHeader"
+        android:text="You have X upcoming appointments."
+        android:textSize="18sp"
+        android:gravity="center"
+        android:padding="20dp" />
+
+</RelativeLayout>

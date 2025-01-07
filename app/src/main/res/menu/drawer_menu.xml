@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_partner_link"
+        android:title="PartnerLink"
+        android:icon="@drawable/ic_partner_link" />
+    <item
+        android:id="@+id/action_notifications"
+        android:title="Notifications"
+        android:icon="@drawable/ic_notification" />
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings" />
+    <item
+        android:id="@+id/action_support"
+        android:title="Support"
+        android:icon="@drawable/ic_support" />
+    <item
+        android:id="@+id/action_faq"
+        android:title="FAQ"
+        android:icon="@drawable/ic_faq" />
+</menu>

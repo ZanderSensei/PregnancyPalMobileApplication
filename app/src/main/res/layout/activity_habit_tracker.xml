@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/textViewHabitSummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habit Summary"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Water Intake Tracker -->
+        <TextView
+            android:id="@+id/textViewWaterIntake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Water Intake"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/imageViewWater"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/water_drop"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroupWaterIntake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonOneLiter"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="1 Liter"
+                    android:background="@drawable/radio_button_water_background"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:buttonTint="@color/light_blue" />
+
+
+                <RadioButton
+                    android:id="@+id/radioButtonTwoLiters"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="2 Liters"
+                    android:background="@drawable/radio_button_water_background"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:buttonTint="@color/light_blue" />
+
+                <RadioButton
+                    android:id="@+id/radioButtonThreeLiters"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="3 Liters"
+                    android:background="@drawable/radio_button_water_background"
+                    android:textColor="@android:color/black"
+                    android:padding="10dp"
+                    android:buttonTint="@color/light_blue" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <!-- Sleep Tracker -->
+        <TextView
+            android:id="@+id/textViewSleepHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sleep Hours"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewSleep"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/sleep_icon"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <RadioGroup
+                android:id="@+id/radioGroupSleepHours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioButtonSixHours"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="6 hrs"
+                    android:background="@drawable/radio_button_sleep_background"
+                    android:textColor="@android:color/black"
+                    android:buttonTint="@color/purple_200"
+                    android:padding="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonEightHours"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="8 hrs"
+                    android:background="@drawable/radio_button_sleep_background"
+                    android:textColor="@android:color/black"
+                    android:buttonTint="@color/purple_200"
+                    android:padding="10dp"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonTenHours"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="10 hrs"
+                    android:background="@drawable/radio_button_sleep_background"
+                    android:textColor="@android:color/black"
+                    android:buttonTint="@color/purple_200"
+                    android:padding="10dp"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <!-- Template for Nutrition Tracking -->
+        <TextView
+            android:id="@+id/textViewNutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nutrition Tracking"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewNutrition"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/nutrition_icon"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <!-- Options for meals -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/checkBoxBreakfast"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Breakfast"
+                android:background="@drawable/checkbox_background"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLunch"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Lunch"
+                android:background="@drawable/checkbox_background"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="16sp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxDinner"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Dinner"
+                android:background="@drawable/checkbox_background"
+                android:button="@null"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:padding="10dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Template for Exercise Tracking -->
+        <TextView
+            android:id="@+id/textViewExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exercise Tracking"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewExercise"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/exercise_icon"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/checkBoxExerciseDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise Completed"
+            android:background="@drawable/checkbox_background"
+            android:button="@null"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/textViewWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight Tracking"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewWeight"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/weight_scale_icon"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your weight"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <!-- Template for Medication Intake Tracking -->
+        <TextView
+            android:id="@+id/textViewMedication"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medication Intake"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewMedication"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/medication_icon"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextMedication"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter medication taken"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <!-- Template for Doctor's Appointments Tracking -->
+        <TextView
+            android:id="@+id/textViewDoctorAppointment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Doctor's Appointments"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewDoctorAppointment"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/doctor_appointment_icon"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextDoctorAppointment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter next appointment date"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <!-- Template for Kick Counts Tracking -->
+        <TextView
+            android:id="@+id/textViewKickCounts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kick Counts"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/imageViewKickCounts"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/kicks_count_icon"
+            android:layout_gravity="center_horizontal"
+            android:paddingBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editTextKickCounts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter today's kick count"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:padding="10dp"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="32dp"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:background="@drawable/submit_button_background"
+            android:padding="12dp"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"/>
+
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

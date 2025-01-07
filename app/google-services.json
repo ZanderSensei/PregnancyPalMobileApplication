@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "824050256613",
+    "project_id": "pregnancy-pal-app",
+    "storage_bucket": "pregnancy-pal-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824050256613:android:72b65ec01222f5340ee20c",
+        "android_client_info": {
+          "package_name": "com.example.pregnancypalapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd-NXp58-pjlaRZmBKNJi_FsqEU6jG8qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:824050256613:android:4081aa40b21aa2af0ee20c",
+        "android_client_info": {
+          "package_name": "com.example.pregnancypalapp2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDd-NXp58-pjlaRZmBKNJi_FsqEU6jG8qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

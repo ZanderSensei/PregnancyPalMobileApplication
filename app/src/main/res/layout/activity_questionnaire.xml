@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Section Title: Basic Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic Information"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingBottom="8dp"/>
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"/>
+
+        <!-- Email Address -->
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"/>
+
+        <!-- Date of Birth -->
+        <EditText
+            android:id="@+id/dateOfBirth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Date of Birth"
+            android:inputType="date"/>
+
+        <!-- Expected Due Date -->
+        <EditText
+            android:id="@+id/expectedDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Expected Due Date"
+            android:inputType="date"/>
+
+        <!-- Current Week of Pregnancy -->
+        <Spinner
+            android:id="@+id/currentWeekSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Section Title: Health and Pregnancy History -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health and Pregnancy History"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <!-- Number of Pregnancies -->
+        <EditText
+            android:id="@+id/numberOfPregnancies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Pregnancies"
+            android:inputType="number"/>
+
+        <!-- Previous Pregnancy Complications -->
+        <EditText
+            android:id="@+id/previousComplications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Previous Pregnancy Complications"/>
+
+        <!-- Current Health Conditions -->
+        <EditText
+            android:id="@+id/currentHealthConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Current Health Conditions"/>
+
+        <!-- Medications -->
+        <EditText
+            android:id="@+id/medications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Medications"/>
+
+        <!-- Allergies -->
+        <EditText
+            android:id="@+id/allergies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Allergies"/>
+
+        <!-- Section Title: Lifestyle and Preferences -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lifestyle and Preferences"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <!-- Dietary Preferences -->
+        <Spinner
+            android:id="@+id/dietaryPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Exercise Habits -->
+        <EditText
+            android:id="@+id/exerciseHabits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Exercise Habits"/>
+
+        <!-- Support System -->
+        <EditText
+            android:id="@+id/supportSystem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Support System"/>
+
+        <!-- Stress Level -->
+        <SeekBar
+            android:id="@+id/stressLevel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:progress="5"/>
+
+        <!-- Information Preferences -->
+        <EditText
+            android:id="@+id/informationPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Information Preferences"/>
+
+        <!-- Section Title: Goals and Concerns -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goals and Concerns"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <!-- Pregnancy Goals -->
+        <EditText
+            android:id="@+id/pregnancyGoals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pregnancy Goals"/>
+
+        <!-- Major Concerns -->
+        <EditText
+            android:id="@+id/learningPreferences"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Learning Preferences" />
+
+        <EditText
+            android:id="@+id/majorConcerns"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Major Concerns"/>
+
+        <!-- Learning Preferences -->
+
+        <!-- Additional Information -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Additional Information"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"/>
+
+        <!-- Baby's Gender Preference -->
+        <RadioGroup
+            android:id="@+id/genderPreference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/genderMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male"/>
+            <RadioButton
+                android:id="@+id/genderFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female"/>
+            <RadioButton
+                android:id="@+id/genderNoPreference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Preference"/>
+        </RadioGroup>
+
+        <!-- Interest in Childbirth Education Classes -->
+        <CheckBox
+            android:id="@+id/interestedInClasses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interested in Childbirth Education Classes"/>
+
+        <!-- App Features Most Interested In -->
+        <EditText
+            android:id="@+id/interestedFeatures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Features Interested In"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitQuestionnaire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+</ScrollView>
